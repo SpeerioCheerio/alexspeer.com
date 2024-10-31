@@ -1,70 +1,95 @@
 /* General Body Styling */
 body {
     font-family: 'Helvetica', Arial, sans-serif;
-    background-color: #e0f7fa;
-    color: #333;
+    background-color: #222;
+    color: #fff;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
+    background-image: url('dragon-background.jpg'); /* Add your dragon image here */
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 /* Header Styling */
 header {
-    background-color: #00796b;
-    color: #fff;
-    padding: 1.5rem;
+    background-color: #4e0000;
+    color: #ffdd57;
+    padding: 2rem;
     text-align: center;
+    border-bottom: 5px solid #ffdd57;
 }
 
 header h1 {
     margin: 0;
-    font-size: 2.5rem;
+    font-size: 3rem;
+    font-family: 'Fantasy', sans-serif;
+    text-shadow: 2px 2px #ff6600;
 }
 
 /* Main Container */
 main {
-    max-width: 800px;
+    max-width: 900px;
     margin: 2rem auto;
     padding: 1.5rem;
-    background-color: #ffffff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 4px 12px rgba(255, 165, 0, 0.3);
+    border-radius: 12px;
 }
 
 /* Section Headings */
 h2 {
-    color: #00796b;
-    border-bottom: 2px solid #80cbc4;
+    color: #ffdd57;
+    font-family: 'Fantasy', sans-serif;
+    font-size: 2rem;
+    text-shadow: 2px 2px #ff6600;
+    border-bottom: 2px solid #ffdd57;
     padding-bottom: 0.5rem;
-    font-size: 1.8rem;
 }
 
 /* Unordered List Styling */
 ul {
-    list-style-type: square;
+    list-style-type: none;
     padding-left: 1.5rem;
 }
 
 ul li {
-    margin: 0.5rem 0;
-    font-size: 1rem;
+    margin: 0.8rem 0;
+    font-size: 1.1rem;
+    color: #ffdd57;
 }
 
 /* Footer Styling */
 footer {
     text-align: center;
     padding: 1rem;
-    background-color: #00796b;
-    color: #fff;
-    font-size: 0.9rem;
+    background-color: #4e0000;
+    color: #ffdd57;
+    font-size: 1rem;
+    font-family: 'Fantasy', sans-serif;
+    border-top: 5px solid #ffdd57;
 }
 
 /* Link Styling */
 a {
-    color: #004d40;
+    color: #ff6600;
     text-decoration: none;
+    font-weight: bold;
 }
 
 a:hover {
     text-decoration: underline;
+    color: #ffdd57;
+}
+
+/* Dragon Image Decorations */
+.dragon {
+    background-image: url('dragon.png'); /* Replace 'dragon.png' with your dragon image path */
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
 }
