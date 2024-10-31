@@ -1,95 +1,141 @@
 /* General Body Styling */
 body {
-    font-family: 'Helvetica', Arial, sans-serif;
-    background-color: #222;
-    color: #fff;
+    font-family: Arial, sans-serif;
+    background-color: #e8f5e9;
+    color: #333;
     margin: 0;
     padding: 0;
-    background-image: url('dragon-background.jpg'); /* Add your dragon image here */
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
+    line-height: 1.6;
 }
 
 /* Header Styling */
 header {
-    background-color: #4e0000;
-    color: #ffdd57;
-    padding: 2rem;
+    background-color: #4caf50;
+    color: #fff;
+    padding: 1.5rem;
     text-align: center;
-    border-bottom: 5px solid #ffdd57;
 }
 
 header h1 {
     margin: 0;
-    font-size: 3rem;
-    font-family: 'Fantasy', sans-serif;
-    text-shadow: 2px 2px #ff6600;
+    font-size: 2.5rem;
 }
 
-/* Main Container */
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content Styling */
 main {
     max-width: 900px;
     margin: 2rem auto;
     padding: 1.5rem;
-    background-color: rgba(0, 0, 0, 0.8);
-    box-shadow: 0 4px 12px rgba(255, 165, 0, 0.3);
-    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
 /* Section Headings */
 h2 {
-    color: #ffdd57;
-    font-family: 'Fantasy', sans-serif;
+    color: #2e7d32;
     font-size: 2rem;
-    text-shadow: 2px 2px #ff6600;
-    border-bottom: 2px solid #ffdd57;
+    margin-top: 0;
+    text-align: center;
+    border-bottom: 2px solid #81c784;
     padding-bottom: 0.5rem;
 }
 
-/* Unordered List Styling */
-ul {
-    list-style-type: none;
-    padding-left: 1.5rem;
+h3 {
+    color: #388e3c;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    text-align: left;
+    border-bottom: 1px solid #81c784;
+    padding-bottom: 0.3rem;
 }
 
-ul li {
-    margin: 0.8rem 0;
-    font-size: 1.1rem;
-    color: #ffdd57;
+/* Project Gallery Styling */
+.project-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.project-gallery figure {
+    flex: 1 1 300px; /* Each figure takes up at least 300px, adjusts responsively */
+    max-width: 300px;
+    text-align: center;
+    margin: 0;
+}
+
+.project-gallery img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.project-gallery img:hover {
+    transform: scale(1.05);
+}
+
+.project-gallery figcaption {
+    margin-top: 0.5rem;
+    color: #2e7d32;
+    font-style: italic;
 }
 
 /* Footer Styling */
 footer {
     text-align: center;
     padding: 1rem;
-    background-color: #4e0000;
-    color: #ffdd57;
-    font-size: 1rem;
-    font-family: 'Fantasy', sans-serif;
-    border-top: 5px solid #ffdd57;
+    background-color: #4caf50;
+    color: #fff;
+    font-size: 0.9rem;
+    margin-top: 2rem;
 }
 
-/* Link Styling */
+/* Footer Links */
+footer p {
+    margin: 0;
+}
+
+/* Additional Styling for Lists and Links */
+ul {
+    padding-left: 1.5rem;
+}
+
+ul li {
+    margin: 0.5rem 0;
+    color: #2e7d32;
+}
+
 a {
-    color: #ff6600;
+    color: #388e3c;
     text-decoration: none;
-    font-weight: bold;
 }
 
 a:hover {
     text-decoration: underline;
-    color: #ffdd57;
-}
-
-/* Dragon Image Decorations */
-.dragon {
-    background-image: url('dragon.png'); /* Replace 'dragon.png' with your dragon image path */
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 100px;
-    width: 100px;
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 10px;
+    color: #1b5e20;
 }
