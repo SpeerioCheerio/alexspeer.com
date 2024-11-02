@@ -139,3 +139,8 @@ a:hover {
     text-decoration: underline;
     color: #1b5e20;
 }
+
+.active {
+    text-decoration: underline;
+    color: #388e3c; /* or any color indicating the active state */
+}
