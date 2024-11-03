@@ -1,0 +1,146 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e8f5e9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content Styling */
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Section Headings */
+h2 {
+    color: #2e7d32;
+    font-size: 2rem;
+    margin-top: 0;
+    text-align: center;
+    border-bottom: 2px solid #81c784;
+    padding-bottom: 0.5rem;
+}
+
+h3 {
+    color: #388e3c;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    text-align: left;
+    border-bottom: 1px solid #81c784;
+    padding-bottom: 0.3rem;
+}
+
+/* Project Gallery Styling */
+.project-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.project-gallery figure {
+    flex: 1 1 300px; /* Each figure takes up at least 300px, adjusts responsively */
+    max-width: 300px;
+    text-align: center;
+    margin: 0;
+}
+
+.project-gallery img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.project-gallery img:hover {
+    transform: scale(1.05);
+}
+
+.project-gallery figcaption {
+    margin-top: 0.5rem;
+    color: #2e7d32;
+    font-style: italic;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #4caf50;
+    color: #fff;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+}
+
+/* Footer Links */
+footer p {
+    margin: 0;
+}
+
+/* Additional Styling for Lists and Links */
+ul {
+    padding-left: 1.5rem;
+}
+
+ul li {
+    margin: 0.5rem 0;
+    color: #2e7d32;
+}
+
+a {
+    color: #388e3c;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #1b5e20;
+}
+
+.active {
+    text-decoration: underline;
+    color: #388e3c; /* or any color indicating the active state */
+}
